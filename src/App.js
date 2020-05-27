@@ -16,7 +16,7 @@ function App(props) {
       <button onClick={() => props.filterWeek(30)}>Month</button>
       <button onClick={() => props.filterWeek(90)}>Quarter</button>
       <button onClick={() => props.filterWeek(365)}>Year</button>
-      <button disabled={true} onClick={() => props.filterWeek(0)}>Max</button>
+      <button onClick={() => props.filterWeek(0)}>Max</button>
       <LineChart width={600} height={300} data={props.data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
         <Line type="monotone" dataKey={props.keyValue} stroke="#8884d8" />
         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
